@@ -1,0 +1,15 @@
+.box {
+
+    padding: 15px 10px;
+    border: 1px solid #465DFF;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    ;
+}
+
+.box:hover {
+
+    background-color: #465DFF;
+    color: white;
+}
