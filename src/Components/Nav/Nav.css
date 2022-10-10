@@ -1,9 +1,3 @@
-.headImg {
-
-    width: 60px;
-    height: 60px;
-}
-
 .nav-item a {
 
     text-decoration: none;
@@ -16,4 +10,23 @@
     padding: 10px;
     border: none;
     border-radius: 10%;
+}
+
+@media screen and (max-width:576px) {
+    .bold {
+        background-color: #465DFF;
+        padding: 2px;
+        border: none;
+        border-radius: 10%;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .bold {
+
+        background-color: #465DFF;
+        padding: 2px;
+        border: none;
+        border-radius: 10%;
+    }
 }

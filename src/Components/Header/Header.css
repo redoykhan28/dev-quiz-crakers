@@ -1,0 +1,40 @@
+.imgHead {
+
+    margin: 90px auto;
+}
+
+.headTitle {
+
+    margin: 190px auto;
+}
+
+.btHead {
+
+    background-color: #465DFF;
+    color: white;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:576px) {
+    .imgHead {
+
+        margin: 10px auto;
+    }
+
+    .headTitle {
+
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .imgHead {
+
+        margin: 20px auto;
+    }
+
+    .headTitle {
+
+        margin: 30px auto;
+    }
+}
