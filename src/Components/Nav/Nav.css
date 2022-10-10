@@ -1,0 +1,19 @@
+.headImg {
+
+    width: 60px;
+    height: 60px;
+}
+
+.nav-item a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.bold {
+
+    background-color: #465DFF;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+}
