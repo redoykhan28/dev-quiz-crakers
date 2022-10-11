@@ -9,13 +9,39 @@
     color: black;
 }
 
-.bold {
+.home {
 
     background-color: #465DFF;
     padding: 10px;
     border: none;
     border-radius: 10%;
 }
+
+.topic {
+    background-color: #212529;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+
+}
+
+.statistic {
+
+    background-color: #FE7A6E;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+}
+
+.blog {
+
+    background-color: #FF4F5A;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+}
+
+
 
 @media screen and (max-width:576px) {
     .bold {

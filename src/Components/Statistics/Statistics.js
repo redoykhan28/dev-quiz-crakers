@@ -36,7 +36,7 @@ const Statistics = () => {
                                 <YAxis />
                                 <Tooltip />
                                 <Legend />
-                                <Bar dataKey="total" fill="#465DFF" />
+                                <Bar dataKey="total" fill="#FE7A6E" />
                             </BarChart>
                         </ResponsiveContainer>
                         <small className='text-muted'>-BarCharts for total number of exam</small>

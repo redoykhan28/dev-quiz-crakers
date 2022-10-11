@@ -8,3 +8,17 @@
     background-color: #FF4F5A;
     color: white;
 }
+
+@media screen and (max-width:576px) {
+    .bTitle {
+
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .bTitle {
+
+        margin-top: 40px;
+    }
+}

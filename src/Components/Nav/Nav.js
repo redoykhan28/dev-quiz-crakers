@@ -19,16 +19,16 @@ const Nav = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item me-lg-4">
-                                <NavLink className={({ isActive }) => isActive ? 'bold text-light' : undefined} to={'/home'}>Home</NavLink>
+                                <NavLink className={({ isActive }) => isActive ? 'home text-light' : undefined} to={'/home'}>Home</NavLink>
                             </li>
                             <li className="nav-item me-lg-4">
-                                <NavLink className={({ isActive }) => isActive ? 'bold text-light' : undefined} to={'/topics'}>Topics</NavLink>
+                                <NavLink className={({ isActive }) => isActive ? 'topic text-light' : undefined} to={'/topics'}>Topics</NavLink>
                             </li>
                             <li className="nav-item me-lg-4">
-                                <NavLink className={({ isActive }) => isActive ? 'bold text-light' : undefined} to={'/statistics'}>Statistics</NavLink>
+                                <NavLink className={({ isActive }) => isActive ? 'statistic text-light' : undefined} to={'/statistics'}>Statistics</NavLink>
                             </li>
                             <li className="nav-item me-lg-4">
-                                <NavLink className={({ isActive }) => isActive ? 'bold text-light' : undefined} to={'/blog'}>Blogs</NavLink>
+                                <NavLink className={({ isActive }) => isActive ? 'blog text-light' : undefined} to={'/blog'}>Blogs</NavLink>
 
                             </li>
                         </ul>
