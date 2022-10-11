@@ -22,6 +22,9 @@ const Nav = () => {
                                 <NavLink className={({ isActive }) => isActive ? 'bold text-light' : undefined} to={'/home'}>Home</NavLink>
                             </li>
                             <li className="nav-item me-lg-4">
+                                <NavLink className={({ isActive }) => isActive ? 'bold text-light' : undefined} to={'/topics'}>Topics</NavLink>
+                            </li>
+                            <li className="nav-item me-lg-4">
                                 <NavLink className={({ isActive }) => isActive ? 'bold text-light' : undefined} to={'/statistics'}>Statistics</NavLink>
                             </li>
                             <li className="nav-item me-lg-4">
