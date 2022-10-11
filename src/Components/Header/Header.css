@@ -1,11 +1,11 @@
 .imgHead {
 
-    margin: 90px auto;
+    margin: 60px auto;
 }
 
 .headTitle {
 
-    margin: 190px auto;
+    margin: 160px auto;
 }
 
 .btHead {
@@ -13,6 +13,12 @@
     background-color: #465DFF;
     color: white;
     margin-top: 5px;
+}
+
+.btHead:hover {
+
+    background-color: #5b6df0;
+    color: white;
 }
 
 @media screen and (max-width:576px) {

@@ -3,11 +3,15 @@ import './Question.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { EyeIcon } from '@heroicons/react/24/solid'
+import { useState } from 'react';
 
 
 const Question = ({ questionQuiz, correct, incorrect }) => {
 
     const { question, options, correctAnswer } = questionQuiz;
+
+    const [color, setcolor] = useState(false)
+
 
     const correctAnsBtn = (option) => {
 
@@ -18,12 +22,14 @@ const Question = ({ questionQuiz, correct, incorrect }) => {
 
             toast.success("Correct", { position: "top-center" })
             correct();
+            setcolor(!color)
         }
 
         else {
 
             toast.error("Incorrect", { position: "top-center" })
             incorrect();
+            setcolor(color)
         }
     }
 
@@ -31,6 +37,7 @@ const Question = ({ questionQuiz, correct, incorrect }) => {
 
         toast.info(ans, { position: "top-center", theme: "colored" })
     }
+
 
 
     return (
@@ -43,7 +50,7 @@ const Question = ({ questionQuiz, correct, incorrect }) => {
 
                 <div>
                     {
-                        options.map(option => <Option key={option.id} option={option} btnHandler={correctAnsBtn} questionQuiz={questionQuiz}></Option>)
+                        options.map(option => <Option key={option.id} option={option} btnHandler={correctAnsBtn}></Option>)
                     }
                 </div>
 

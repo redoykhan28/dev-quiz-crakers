@@ -5,7 +5,7 @@ import './Nav.css'
 
 const Nav = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-color">
+        <nav className="navbar navbar-expand-lg bg-color p-2">
             <div className="container d-flex  justify-content-between align-items-center">
                 <div className='title'>
                     <h3>Quizi</h3>

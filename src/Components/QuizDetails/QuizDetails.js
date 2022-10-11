@@ -27,6 +27,7 @@ const QuizDetails = () => {
         setIncorrect(incorrect + 1)
     }
 
+
     return (
         <div className='container text-center my-5'>
             <h3>Exam Name: {name}</h3>
