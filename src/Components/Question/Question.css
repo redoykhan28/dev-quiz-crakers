@@ -1,11 +1,23 @@
+.question {
+
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+
+.icon {
+
+    width: 20px;
+    height: 20px;
+
+}
+
 .box {
 
-    padding: 15px 10px;
+    padding: 15px;
     border: 1px solid #465DFF;
     border-radius: 10px;
     margin: 10px;
     cursor: pointer;
-    ;
 }
 
 .box:hover {

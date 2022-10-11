@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Quiz from '../Quiz/Quiz';
 import './Home.css'
 
+
 const Home = () => {
     const quizes = useLoaderData().data;
     // console.log(quizes)

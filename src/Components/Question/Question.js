@@ -1,27 +1,66 @@
-import React from 'react';
+import Option from '../Option/Option';
 import './Question.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { EyeIcon } from '@heroicons/react/24/solid'
 
-const Question = ({ questionQuiz }) => {
-    const { id, question, options, correctAnswer } = questionQuiz;
+
+const Question = ({ questionQuiz, correct, incorrect }) => {
+
+    const { question, options, correctAnswer } = questionQuiz;
+
+    const correctAnsBtn = (option) => {
+
+        // console.log(option.replace(/\s+/g, ''))
+        // console.log(correctAnswer.replace(/\s+/g, ''))
+
+        if (option.replace(/\s+/g, '') === correctAnswer.replace(/\s+/g, '')) {
+
+            toast.success("Correct", { position: "top-center" })
+            correct();
+        }
+
+        else {
+
+            toast.error("Incorrect", { position: "top-center" })
+            incorrect();
+        }
+    }
+
+    const eventHadndler2 = (ans) => {
+
+        toast.info(ans, { position: "top-center", theme: "colored" })
+    }
+
+
     return (
 
-        <div className='question my-5'>
-            <h4 className='mb-4'>{question}</h4>
+        <div>
 
-            <div className="form-check w-50 mx-auto box text-center fw-bold" >
-                {options[0]}
-            </div>
-            <div className="form-check w-50 mx-auto box text-center fw-bold" >
-                {options[1]}
-            </div>
-            <div className="form-check w-50 mx-auto box text-center fw-bold" >
-                {options[2]}
-            </div>
-            <div className="form-check w-50 mx-auto box text-center fw-bold" >
-                {options[3]}
-            </div>
+            <div className='question p-2 py-md-5 rounded-2 my-3 my-5'>
+                <span onClick={() => eventHadndler2(correctAnswer)}><EyeIcon className="icon my-3" /></span>
+                <h4 className='mb-5'>{question}</h4>
 
+                <div>
+                    {
+                        options.map(option => <Option key={option.id} option={option} btnHandler={correctAnsBtn} questionQuiz={questionQuiz}></Option>)
+                    }
+                </div>
+
+                <ToastContainer
+                    autoClose={2000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="light" />
+
+            </div>
         </div>
+
     );
 };
 
