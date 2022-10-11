@@ -43,6 +43,9 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '*', element: <div> <h1 className='text-center mt-5'> This page is not available 404</h1></div>
         }
       ]
     }
