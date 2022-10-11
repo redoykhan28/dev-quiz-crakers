@@ -10,6 +10,7 @@ const QuizDetails = () => {
 
     const { name, total } = exmInfo
 
+
     //for correct value count
     const [correct, setCorrect] = useState(0)
 
@@ -38,11 +39,10 @@ const QuizDetails = () => {
 
             </div>
             <div>
-                <ol>
-                    {
-                        details.map(question => <Question key={details.id} questionQuiz={question} correct={CorrectCount} incorrect={incorrectCount}></Question>)
-                    }
-                </ol>
+                {
+                    details.map(question => <Question key={details.id} questionQuiz={question} correct={CorrectCount} incorrect={incorrectCount}></Question>)
+                }
+
             </div>
         </div>
     );

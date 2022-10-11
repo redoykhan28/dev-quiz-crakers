@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import image from '../../images/chart.jpg'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import Footer from '../Footer/Footer';
 
 
 
@@ -43,6 +44,7 @@ const Statistics = () => {
 
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

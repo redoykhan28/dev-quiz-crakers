@@ -15,7 +15,7 @@ const Quiz = ({ quiz }) => {
 
     return (
 
-        <div className="card  my-5 bg-dark p-3" style={{ width: '19rem' }}>
+        <div className="card my-3 mx-auto  my-md-5 bg-dark p-3" style={{ width: '19rem' }}>
             <img src={logo} className="img-fluid mx-auto" alt="img" />
             <div className="card-body">
                 <h5 className="card-title text-white my-2">{name}</h5>

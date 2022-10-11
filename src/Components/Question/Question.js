@@ -44,9 +44,9 @@ const Question = ({ questionQuiz, correct, incorrect }) => {
 
         <div>
 
-            <div className='question p-2 py-md-5 rounded-2 my-3 my-5'>
+            <div className='question p-2 py-md-5 rounded-2  my-3 my-5'>
                 <span onClick={() => eventHadndler2(correctAnswer)}><EyeIcon className="icon my-3" /></span>
-                <h4 className='mb-5'>{question}</h4>
+                <h4 className='mb-5'>Quiz: {question}</h4>
 
                 <div>
                     {
