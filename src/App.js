@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import image from './images/404.jpg'
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
@@ -45,7 +45,13 @@ function App() {
           element: <Blog></Blog>
         },
         {
-          path: '*', element: <div> <h1 className='text-center mt-5'> This page is not available 404</h1></div>
+          path: '*', element: <div className='text-center'>
+            <h1 className=' mt-5'>
+              This page is not available.</h1>
+            <p className='text-muted'>Sorry! 404. The page you are looking for is not available</p>
+            <img className='img-fluid w-25 mx-auto' src={image} alt="" />
+          </div>
+
         }
       ]
     }

@@ -39,7 +39,7 @@ const Statistics = () => {
                                 <Bar dataKey="total" fill="#FE7A6E" />
                             </BarChart>
                         </ResponsiveContainer>
-                        <small className='text-muted'>-BarCharts for total number of exam</small>
+                        <small className='text-muted'>-BarCharts for total number of exam questions</small>
                     </div>
 
                 </div>
